@@ -20,12 +20,18 @@ What happens to prices of different goods when a major event happens? And how do
     - There are two sets of data, one is daily price of natural gas, the other is monthly price of natural gas.
     - Both datasets have 2 columns, daily price has 5876 rows, monthly price has 280 rows.
     - These two datasets could help us answer all three questions if we create some data visualizations and answer questions accordingly.
-2. [Global price of Brent Crude](https://fred.stlouisfed.org/series/POILBREUSDM)
+
+2. [Natural gas prices global](https://ourworldindata.org/grapher/natural-gas-prices)  
+    - This data comes from Global Energy Statistic contains Annually prices of Natural gas, starting from 2009 to 2018.
+    - The dataset has 81 columns, 4 rows.
+    - This dataset could help us answer third question by comparing prices by each countiries and finding relationship between US and global gas prices. 
+    
+3. [Global price of Brent Crude](https://fred.stlouisfed.org/series/POILBREUSDM)
     - This comes from International Monetary Fund, recording of US dollars per Barrel. Data ranges from 1990 to 2020.
     - The amount recorded is the average during that given month.
     - Dataset has 2 columns and 364 rows
     - This data set on global price of brent crude can also answer all three questions since it records monthly price of gas prices per barrel.
-3. [Global Food Prices Database](https://data.humdata.org/dataset/wfp-food-prices)
+4. [Global Food Prices Database](https://data.humdata.org/dataset/wfp-food-prices)
     - Contains Global Food Prices data from the World Food Programme covering different foods for 76 countries and 1,500 markets.
     - They recorded prices based off of location and variety. Some data dates all the way back to 1992.
     - There are more than 1046915 rows (that my computer could load), and 17 columns
