@@ -18,7 +18,7 @@ bar_graph <- function(df) {
   new_data <- melt(bar_data, id.vars = 'Year')
   graph <- ggplot(new_data, aes(x = Year, y = value)) +
     geom_bar(aes(fill = variable), position = "dodge", stat="identity") +
-    labs(x = "Year", y = "Consumption, terawatt per hour",
+    labs(x = "Year", y = "Consumption (TWh)",
          title = "Fossil fuel consumption by year")
   return(graph)
 }
