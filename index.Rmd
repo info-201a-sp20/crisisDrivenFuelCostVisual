@@ -28,7 +28,7 @@ This dataset includes consumption of fossil fuel world wide from `r head(summary
 ## Table
 Here is a table with average consumption of fossil fuels of different years, they are ranked in decreasing order in average oil price that year.
 `r table_sum_info(data)`
-Fossil fuel prices should grow every year but we can already see that there are some exceptions. For example, around 2008 there are some fluctuations in prices which we know that is when the recession took place globally. The fluctuations in prices during the 70s is due to the 1970s energy crisis.
+Fossil fuel prices should grow every year but we can already see that there are some exceptions. For example, around 2008 there are some fluctuations in prices which we know that is when the recession took place globally. The fluctuations in prices during the 70s is due to the 1970s energy crisis. At the same time, we can also observe how coal and gas prices are related to oil prices.
 
 ## Bar graph
 This bar graph is intended to show the general trend of fossil fuel prices overtime.
