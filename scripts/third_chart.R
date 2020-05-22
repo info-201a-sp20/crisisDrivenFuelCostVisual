@@ -5,7 +5,7 @@
 
 library(ggplot2)
 
-ff_consumption <- read.csv(file = "data/fossilfuel/fossil-fuel-consumption.csv",stringsAsFactors = FALSE)
+ff_consumption <- read.csv(file = "../data/fossilfuel/fossil-fuel-consumption.csv",stringsAsFactors = FALSE)
 
 gas_consumption <- ggplot(ff_consumption, aes(x = Year, y = Gas)) + geom_point() + scale_x_log10() +
   ggtitle("Gas Consumption By Country") + theme(plot.title = element_text(family = "serif", face = "bold", hjust = 0.5, size = 15, color = "red")) +

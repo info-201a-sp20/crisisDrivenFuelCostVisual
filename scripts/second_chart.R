@@ -7,7 +7,7 @@
 
 library(ggplot2)
 
-gas_prod <- read.csv(file = "data/fossilfuel/fossil-fuel-price-index.csv",stringsAsFactors = FALSE)
+gas_prod <- read.csv(file = "../data/fossilfuel/fossil-fuel-price-index.csv",stringsAsFactors = FALSE)
 
 
 gg <- ggplot(data=gas_prod, aes(x=Year , y = Coal, color = "blue"))
