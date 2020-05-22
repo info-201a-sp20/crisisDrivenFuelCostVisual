@@ -11,8 +11,8 @@ What happens to prices of different goods when a major event happens? And how do
       - We can then look at other products' prices at the same time and see how different products get affected.
   2. Do prices bounce back after such event? If so, how do prices bounce back?
       - After spotting major events that caused price fluctuations, try and look for price patterns after such event.
-  3. How do we better prepare ourselves before or during such event to decrease its effects on us?
-      - Then finally, look over data that we found and see if there is any repeating trends that we could use to our advantages in the future.
+  3. What kind of crisis can we derive from changes of gloabl prices?
+      - We can actually see if there was a crisis or an event where global prices changed and determine what it was.
 
 ## Datasets
 1. [Natural gas prices](https://datahub.io/core/natural-gas#resource-daily)  
