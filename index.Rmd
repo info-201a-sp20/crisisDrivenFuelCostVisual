@@ -7,6 +7,8 @@ output: html_document
 
 ```{r setup, include=FALSE}
 source("scripts/first_chart.R")
+source("scripts/second_chart.R")
+source("scripts/third_chart.R")
 source("scripts/summary_info.R")
 source("scripts/table_sum_info.R")
 knitr::opts_chunk$set(echo = TRUE)
@@ -15,15 +17,7 @@ data <- read.csv("data/fossilfuel/fossil-fuel-consumption.csv")
 
 ## Introduction
 
-Introduction here
-
-
-## Summary
-```{r, echo = FALSE}
-summary <- get_summary_info(data)
-```
-
-This dataset includes consumption of fossil fuel world wide from `r head(summary$years, 1)` to `r tail(summary$years, 1)`, separated by different countries. There are `r summary$num_countries` countires in this dataset with `r summary$num_cols` columns of information. From this dataset, the most amount of oil consumed in a year is `r summary$most_consumption_oil` TWh, the most amount of coal consumed in a year is `r summary$most_consumption_coal` TWh and finally the most amount of gas consumed in a year is `r summary$most_consumption_gas`.
+We look at what happens to prices of different goods when a major event happen for example an economic crisis. We analysed the data by asking three questions mainly: How can our daily product prices be affected by global events/crisis?; Do prices bounce back after such events, if so how do they look like after the event?; What kind of crisis can we derive from changes of global prices? The follow graphs are charts will help you understand our analysis.
 
 ## Table
 Here is a table with average consumption of fossil fuels of different years, they are ranked in decreasing order in average oil price that year.
@@ -38,3 +32,10 @@ bar_graph(data)
 ```
 
 From this bargraph, we can see clearly that overall all fossil fuel prices have an upward trend. And if we look closely, we can see three major drops in prices. During the 1970's it was the energy crises, 80's was the energy glut; lastly, around 2010 there was a recession.
+
+## Summary
+```{r, echo = FALSE}
+summary <- get_summary_info(data)
+```
+
+This dataset includes consumption of fossil fuel world wide from `r head(summary$years, 1)` to `r tail(summary$years, 1)`, separated by different countries. There are `r summary$num_countries` countires in this dataset with `r summary$num_cols` columns of information. From this dataset, the most amount of oil consumed in a year is `r summary$most_consumption_oil` TWh, the most amount of coal consumed in a year is `r summary$most_consumption_coal` TWh and finally the most amount of gas consumed in a year is `r summary$most_consumption_gas`.
