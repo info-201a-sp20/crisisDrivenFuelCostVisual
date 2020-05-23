@@ -45,7 +45,7 @@ This shows the consumption of gas(in red), coal(in blue) and oil(in brown).
 graph_third(data)
 ```
 
-From this graph we can tell that the oil consumption in US each years. 
+From this graph we can tell that the oil consumption chart from top 10 oil consumption contries around the world each years. 
 
 ## Summary
 ```{r, echo = FALSE}
