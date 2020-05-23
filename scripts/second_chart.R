@@ -19,6 +19,6 @@ result <- gg + geom_line(aes(x=Year, y = Coal, color = "blue")) + geom_line(aes(
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5 )) + theme(legend.position="right") +
   scale_color_manual(name = "Fossil Fuel Type",  values = c("blue", "red", "black"), labels = c("blue" = "Coal", "red" = "Oil", "black" = "NaturalGas"))
 
-  return(result)
+  result
 }
 
