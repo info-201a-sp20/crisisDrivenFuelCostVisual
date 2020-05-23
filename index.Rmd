@@ -33,6 +33,17 @@ bar_graph(data)
 
 From this bargraph, we can see clearly that overall all fossil fuel prices have an upward trend. And if we look closely, we can see three major drops in prices. During the 1970's it was the energy crises, 80's was the energy glut; lastly, around 2010 there was a recession.
 
+```{r, echo = FALSE}
+graph_second(data)
+```
+
+From this graph we can tell that the cost of natural gas in US was constant in 2015.
+
+```{r, echo = FALSE}
+graph_third(data)
+```
+
+This shows the consumption of gas(in red), coal(in blue) and oil(in brown). 
 ## Summary
 ```{r, echo = FALSE}
 summary <- get_summary_info(data)

@@ -4,7 +4,7 @@
 #It is showing each of consumptions by each year by each countires. 
 
 library(ggplot2)
-
+graph_third(df) {
 ff_consumption <- read.csv(file = "../data/fossilfuel/fossil-fuel-consumption.csv",stringsAsFactors = FALSE)
 
 gas_consumption <- ggplot(ff_consumption, aes(x = Year, y = Gas)) + geom_point() + scale_x_log10() +
@@ -24,3 +24,4 @@ oil_consumption <- ggplot(ff_consumption, aes(x = Year, y = Oil)) + geom_point()
 gas_consumption
 coal_consumption
 oil_consumption
+}
