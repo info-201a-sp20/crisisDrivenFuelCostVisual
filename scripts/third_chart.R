@@ -21,7 +21,7 @@ oil_consumption <- ggplot(ff_consumption, aes(x = Year, y = Oil)) + geom_point()
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5 )) + labs(x="Years", y="Oil Consumption )") + facet_wrap(~Entity) 
 
 
-gas_consumption
-coal_consumption
-oil_consumption
+return(gas_consumption)
+return(coal_consumption)
+return(oil_consumption)
 }
