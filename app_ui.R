@@ -9,38 +9,28 @@ first <- tabPanel (
   "Hearim's page"
 )
 
-## Kang's sidebar for interactive graphs
-side_kang <- sidebarPanel(
-  radioButtons(
-    inputId = "radioInput",
-    label = h3("Which crisis?"),
-    choices = list("70s energy crisis" = 1, "80s energy glut" = 2,
-                   "Great recession" = 3)
-  )
-)
-
 ## Consumption
-prices_demand <- tabPanel (
+demand <- tabPanel (
   "Consumption",
-  h2("Consumption graphs"),
+  h2("Coal consumption graph"),
   sidebarLayout(
     ## Side
     sidebarPanel(
-      sliderInput("range", "Year: ",
-                  min = 1965, max = 2018,
-                  value = c(1965,2018)),
+      sliderInput("sliderInput", "Year: ",
+                  min = 1800, max = 2018,
+                  value = c(1800,2018)),
     ),
     ## Main
     mainPanel(
-      plotlyOutput(
-        outputId = "prices_demand"
+      plotOutput(
+        outputId = "consumption"
       )
     )
   )
 )
 
 ## How demand bounce back after such crisis
-prices_bounce <- tabPanel (
+demand_bounce <- tabPanel (
   "Consumption trend after crisis",
   sidebarLayout(
     ## Side
@@ -54,7 +44,9 @@ prices_bounce <- tabPanel (
     ),
     ## Main
     mainPanel(
-      
+      plotOutput(
+        outputId = "bounce"
+      )
     )
   )
 )
@@ -68,7 +60,7 @@ ui <- navbarPage (
   "Crisis driven prices",
   introduction,
   first,
-  prices_demand,
-  prices_bounce,
+  demand,
+  demand_bounce,
   page_sum
 )
