@@ -9,14 +9,54 @@ first <- tabPanel (
   "Hearim's page"
 )
 
-## Prices and demand
-prices_demand <- tabPanel (
-  "Prices and demand"
+## Kang's sidebar for interactive graphs
+side_kang <- sidebarPanel(
+  radioButtons(
+    inputId = "radioInput",
+    label = h3("Which crisis?"),
+    choices = list("70s energy crisis" = 1, "80s energy glut" = 2,
+                   "Great recession" = 3)
+  )
 )
 
-## How prices bounce back after such crisis
+## Consumption
+prices_demand <- tabPanel (
+  "Consumption",
+  h2("Consumption graphs"),
+  sidebarLayout(
+    ## Side
+    sidebarPanel(
+      sliderInput("range", "Year: ",
+                  min = 1965, max = 2018,
+                  value = c(1965,2018)),
+    ),
+    ## Main
+    mainPanel(
+      plotlyOutput(
+        outputId = "prices_demand"
+      )
+    )
+  )
+)
+
+## How demand bounce back after such crisis
 prices_bounce <- tabPanel (
-  "Prices bounce back"
+  "Consumption trend after crisis",
+  sidebarLayout(
+    ## Side
+    sidebarPanel(
+      radioButtons(
+        inputId = "radioInput",
+        label = h3("Which crisis?"),
+        choices = list("70s energy crisis" = 1, "80s energy glut" = 2,
+                       "Great recession" = 3)
+      )
+    ),
+    ## Main
+    mainPanel(
+      
+    )
+  )
 )
 
 ## Yashasvi here is where your summary goes
