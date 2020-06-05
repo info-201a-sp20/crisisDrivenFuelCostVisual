@@ -12,7 +12,7 @@ first <- tabPanel (
 ## Consumption
 demand <- tabPanel (
   "Consumption",
-  h2("Coal consumption graph"),
+  h2("Fossil fuel consumption graph"),
   sidebarLayout(
     ## Side
     sidebarPanel(
