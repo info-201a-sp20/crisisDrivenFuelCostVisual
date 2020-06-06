@@ -6,34 +6,46 @@ server <- function(input, output) {
   
       output$newbounce <- renderPlot({
         if(input$radioInput == 1){
-          new_data <- filter(cons_data, Year >= 1989 & Year < 1999) %>%
-            melt(id.vars = 'Year')
-          result <- ggplot(data=cons_data, aes(x=Year , y = Oil)) + 
+          new_data <- filter(cons_data, Year >= 1989 & Year < 1999) 
+          #%>%
+          #  melt(id.vars = 'Year')
+          result <- ggplot(data=new_data, aes(x=Year , y = Oil)) + 
             geom_line(aes(x=Year, y = Coal, color = "blue")) + 
             geom_line(aes(x = Year, y = Oil, color = "red")) + 
             geom_line(aes(x = Year, y = NaturalGas, color = "black")) + 
             scale_x_continuous(breaks = pretty(cons_data$Year, n = 10)) +
-            labs(x="Years", y="Price in Dollar", title= "1990 Oil Price Shock")
+            labs(x="Years", y="Price in Dollar", title= "1990 Oil Price Shock") + 
+            scale_color_manual(name = "Fossil Fuel Type",  
+                               values = c("blue", "red", "black"), 
+                               labels = c("blue" = "Coal", "red" = "Oil", "black" = "NaturalGas"))
+          
           result
         }else if(input$radioInput == 2){
-          new_data <- filter(cons_data, Year >= 1999 & Year < 2010) %>%
-            melt(id.vars = 'Year')
-          result <- ggplot(data=cons_data, aes(x=Year , y = Oil)) + 
+          new_data <- filter(cons_data, Year >= 1999 & Year < 2010) 
+            #melt(id.vars = 'Year')
+          result <- ggplot(data=new_data, aes(x=Year , y = Oil)) + 
             geom_line(aes(x=Year, y = Coal, color = "blue")) + 
             geom_line(aes(x = Year, y = Oil, color = "red")) + 
             geom_line(aes(x = Year, y = NaturalGas, color = "black")) + 
             scale_x_continuous(breaks = pretty(cons_data$Year, n = 10)) +
-            labs(x="Years", y="Price in Dollar", title= "2000s energy crisis")
+            labs(x="Years", y="Price in Dollar", title= "2000s Energy Crisis") +
+            scale_color_manual(name = "Fossil Fuel Type",  
+                               values = c("blue", "red", "black"), 
+                               labels = c("blue" = "Coal", "red" = "Oil", "black" = "NaturalGas"))
           result
         }else if(input$radioInput == 3){
-          new_data <- filter(cons_data, Year >= 2010) %>%
-            melt(id.vars = 'Year')
-          result <- ggplot(data=cons_data, aes(x=Year , y = Oil)) + 
+          new_data <- filter(cons_data, Year >= 2010)
+          #%>%
+          #  melt(id.vars = 'Year')
+          result <- ggplot(data=new_data, aes(x=Year , y = Oil)) + 
             geom_line(aes(x=Year, y = Coal, color = "blue")) + 
             geom_line(aes(x = Year, y = Oil, color = "red")) + 
             geom_line(aes(x = Year, y = NaturalGas, color = "black")) + 
             scale_x_continuous(breaks = pretty(cons_data$Year, n = 10)) +
-            labs(x="Years", y="Price in Dollar", title= "Great Recession")
+            labs(x="Years", y="Price in Dollar", title= "Great Recession") +
+            scale_color_manual(name = "Fossil Fuel Type",  
+                               values = c("blue", "red", "black"), 
+                               labels = c("blue" = "Coal", "red" = "Oil", "black" = "NaturalGas"))
           result
         } 
         })     

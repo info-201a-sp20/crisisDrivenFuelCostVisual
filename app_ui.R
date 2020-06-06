@@ -65,10 +65,10 @@ price_bounce <- tabPanel (
   sidebarLayout(
     ## Side
     sidebarPanel(
-      radioButtons(
+      selectInput(
         inputId = "radioInput",
         label = h3("Which crisis affected in prices?"),
-        choices = list("70s Energy Crisis" = 1, "80s Energy Glut" = 2,
+        choices = c("1990 Oil Price Shock" = 1, "2000s Energy Crisis" = 2,
                        "Great Recession" = 3)
       )
     ),
