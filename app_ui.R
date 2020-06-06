@@ -137,7 +137,7 @@ project_summary <- tabPanel (
      product."),
   p("The graph below illustrates the trend in the consumption of coal, crude oil and 
      natural gas after the 70's energy crisis."),
-  img(src = './crisis.png', height = 250, width = 400, align = "center"),
+  img(src = 'https://en.wikipedia.org/wiki/1970s_energy_crisis#/media/File:Oil_Prices_Since_1861.svg', height = 250, width = 400, align = "center"),
   p("This insight may raise further questions about whether we can predict when a global 
      crisis is headed our way and better prepare for it."),
   h3("Takeaway 2"),
