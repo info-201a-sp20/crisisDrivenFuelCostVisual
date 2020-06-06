@@ -114,12 +114,13 @@ project_summary <- tabPanel (
      product."),
   p("The graph below illustrates the trend in the consumption of coal, crude oil and 
      natural gas after the 70's energy crisis."),
-  img(src = '70s_fossil_consumption_graph.png', height = 250, width = 400, align = "center"),
+  img("", src = "https://github.com/info-201a-sp20/info-201-final-project/blob/master/70s_fossil_consumption_graph.png",
+      height = 250, width = 400, align = "center"),
   p("This insight may raise further questions about whether we can predict when a global 
      crisis is headed our way and better prepare for it."),
   h3("Takeaway 2"),
   p(""),
-  img(src = "great_recession_graph.png", height = 300, width = 400, align = "center"),
+  img("", src = "great_recession_graph.png", height = 300, width = 400, align = "center"),
   p(""),
   h3("Takeaway 3"),
   p(""),
