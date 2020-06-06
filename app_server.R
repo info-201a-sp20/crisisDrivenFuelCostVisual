@@ -1,10 +1,10 @@
 
 server <- function(input, output) {
- 
-    cons_data <- read.csv("data/fossilfuel/fossil-fuel-price-index.csv") %>%
-      subset(select = -c(Entity, Code)) %>%
-    
       output$newbounce <- renderPlot({
+        cons_data <- read.csv("data/fossilfuel/fossil-fuel-price-index.csv") %>%
+          subset(select = -c(Entity, Code)) %>%
+          
+          
         if(input$radioInput == 1){
           new_data <- filter(cons_data, Year >= 1970 & Year < 1980) %>%
             melt(id.vars = 'Dollar')
