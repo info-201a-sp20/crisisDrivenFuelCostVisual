@@ -58,9 +58,32 @@ introduction <- tabPanel (
 
 ## Hearim here is your interactive page where you spot crisis
 ## dont forget to change the name to however you see fit
-first <- tabPanel (
-  "Hearim's page"
+
+
+price_bounce <- tabPanel (
+  "Price changes after crisis",
+  sidebarLayout(
+    ## Side
+    sidebarPanel(
+      radioButtons(
+        inputId = "radioInput",
+        label = h3("Which crisis affected in prices?"),
+        choices = list("70s Energy Crisis" = 1, "80s Energy Glut" = 2,
+                       "Great Recession" = 3)
+      )
+    ),
+    ## Main
+    mainPanel(
+      plotOutput(
+        outputId = "newbounce"
+      )
+    )
+  )
 )
+
+
+
+
 
 ## Consumption
 demand <- tabPanel (
