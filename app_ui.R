@@ -137,16 +137,28 @@ project_summary <- tabPanel (
      product."),
   p("The graph below illustrates the trend in the consumption of coal, crude oil and 
      natural gas after the 70's energy crisis."),
-  img("", src = "https://github.com/info-201a-sp20/info-201-final-project/blob/master/70s_fossil_consumption_graph.png",
-      height = 250, width = 400, align = "center"),
+  img(src = 'https://www.nextbigfuture.com/wp-content/uploads/2014/10/per-capita-consumption-of-various-fuels_line-1.png', height = 250, width = 400, align = "center"),
   p("This insight may raise further questions about whether we can predict when a global 
      crisis is headed our way and better prepare for it."),
   h3("Takeaway 2"),
-  p(""),
-  img("", src = "great_recession_graph.png", height = 300, width = 400, align = "center"),
-  p(""),
+  p("The consumption of fossil fuels over the last few decades has been clearly influenced by major
+     global events like the 80s Energy glut and the Great recession. The graph below shows the trends in
+     consumption of fossil fuels like coal, natural gas and other energy sources in face of global events. 
+     Consumption almost always falls in the event of a crisis. The proportion to which it falls depends on 
+     a myriad of factors depending not only on the fuel in question but it also depends on the country in question."),
+  img(src = "https://mogreenstats.files.wordpress.com/2013/05/mo-per-cap-energy-consumpt-by-source-1960-2010.jpg", height = 300, width = 400, align = "center"),
+  p("This also makes us think about the effect on the prices of these goods in the face of global events. 
+     The general trend is that the prices of these goods increase in events of a global crisis."),
   h3("Takeaway 3"),
-  p(""),
+  p("Coming to the topic of how to calculate the effect of these global events on prices. We also look at how long it takes
+     for the prices to return back to their normal cost bracket. The graph below will help in determining that, the general 
+     trend seems to be that the costs are very unstable during these time periods with peaks and sudden drops. This usually 
+     takes a few years to settle down, the prices then stabilize then show a similar almost linear increase as before the global crisis."),
+  img(src = "https://upload.wikimedia.org/wikipedia/commons/e/e7/Oil_prices_to_gas_prices_graph.png",
+      height = 300, width = 400, align = "center"),
+  p("When it comes to predicting when a global crisis can occur. From analysis of the data we have we know the factors that can 
+     cause a major change in consumption and the prices of commodities like fossil fuels. We can then predict the effect the event can have on goods
+     by looking back at these visualizations and preparing for the circumstances as needed.")
 )
 
 ui <- navbarPage (
