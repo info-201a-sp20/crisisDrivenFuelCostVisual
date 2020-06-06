@@ -56,6 +56,8 @@ introduction <- tabPanel (
      the occurence of a global crisis.")
 )
 
+## Hearim here is your interactive page where you spot crisis
+## dont forget to change the name to however you see fit
 
 
 price_bounce <- tabPanel (
@@ -66,7 +68,7 @@ price_bounce <- tabPanel (
       radioButtons(
         inputId = "radioInput",
         label = h3("Which crisis affected in prices?"),
-        choices = list("1990 Oil Price Shock" = 1, "2000s energy crisis" = 2,
+        choices = list("70s Energy Crisis" = 1, "80s Energy Glut" = 2,
                        "Great Recession" = 3)
       )
     ),
@@ -110,7 +112,7 @@ demand_bounce <- tabPanel (
     ## Side
     sidebarPanel(
       radioButtons(
-        inputId = "radioInput",
+        inputId = "radioInput3",
         label = h3("Which crisis?"),
         choices = list("70s energy crisis" = 1, "80s energy glut" = 2,
                        "Great recession" = 3)
