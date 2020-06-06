@@ -152,7 +152,7 @@ project_summary <- tabPanel (
 ui <- navbarPage (
   "Crisis driven prices",
   introduction,
-  first,
+  price_bounce,
   demand,
   demand_bounce,
   project_summary
