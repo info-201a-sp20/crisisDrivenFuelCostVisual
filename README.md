@@ -1,4 +1,4 @@
-[Report link](https://info-201a-sp20.github.io/info-201-final-project/)
+[Report link](https://info-201a-sp20.github.io/crisisDrivenFuelCostVisual/)
 
 ## Domain of interests
 What happens to prices of different goods when a major event happens? And how do prices recover? We are interested in this topic because we are all being affected by global events and we want to understand what it might look like in the future when a major event happens.
